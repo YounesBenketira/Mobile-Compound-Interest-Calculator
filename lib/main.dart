@@ -20,7 +20,6 @@ class _MyAppState extends State<MyApp> {
     new TextEditingController(),
     new TextEditingController(),
     new TextEditingController(),
-    // swaggerrrrrrrrrrrrrrrrrrrr
   ];
 
   List<Map<String, String>> values;
