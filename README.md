@@ -1,16 +1,16 @@
 # Compound Interest Calculator
-Welcome to my first mobile app made using Flutter!
+Welcome to my first mobile app made using Flutter!  
 The purpose of this application is to visualize the growth of an investment portfolio by year, compounded monthly.
 
 ## Getting Started  
 ### **Step 1:** Fill in entry fields with corresponding values.  
-![alt text](images/1.jpg "Logo Title Text 1")
-![alt text](images/2.jpg "Logo Title Text 1")  
+![Empty Fields](images/1.jpg "Empty Fields")
+![Results](images/2.jpg "After Pressing Calculate")  
 
 ### **Step 2:** Press Calculate and see results!  
-![alt text](images/3.jpg "Logo Title Text 1")
-![alt text](images/4.jpg "Logo Title Text 1")  
+![Values](images/3.jpg "Values")
+![Line Graph](images/4.jpg "Line Graph")  
 
 ### **If Values Are Not Integers:**  
-And error pops up!  
-![alt text](images/Popup.gif "Logo Title Text 1")  
+An error pops up!  
+![Value Graph](images/Popup.gif "Value Graph")  
