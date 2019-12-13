@@ -1,11 +1,14 @@
-import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:flutter/material.dart';
 
 class SimpleLineChart extends StatefulWidget {
   final Widget child;
   final List<Map<String, String>> values;
 
-  SimpleLineChart(this.values, {Key key, this.child}) : super(key: key);
+  SimpleLineChart(this.values, {
+    Key key,
+    this.child,
+  }) : super(key: key);
 
   @override
   _SimpleLineChartState createState() => _SimpleLineChartState();
@@ -60,30 +63,19 @@ class _SimpleLineChartState extends State<SimpleLineChart> {
                     domainAxis: new charts.NumericAxisSpec(
                       viewport: new charts.NumericExtents(min, max),
                     ),
-
                     defaultRenderer: new charts.LineRendererConfig(
-                      includePoints: true,
-                      includeLine: true,
-                        includeArea: true, stacked: true),
+                        includePoints: true,
+                        includeLine: true,
+                        includeArea: true,
+                        stacked: true),
                     animate: true,
                     animationDuration: Duration(seconds: 2),
                     behaviors: [
                       new charts.LinePointHighlighter(
                           showHorizontalFollowLine:
                           charts.LinePointHighlighterFollowLineType.nearest,
-                          showVerticalFollowLine:
-                          charts.LinePointHighlighterFollowLineType.nearest),
-//                        new charts.PanAndZoomBehavior(),
-//                      new charts.ChartTitle('Age',
-//                          titleStyleSpec: charts.TextStyleSpec(fontSize: 20),
-//                          behaviorPosition: charts.BehaviorPosition.bottom,
-//                          titleOutsideJustification:
-//                              charts.OutsideJustification.middleDrawArea),
-//                      new charts.ChartTitle('Value(\$)',
-//                          titleStyleSpec: charts.TextStyleSpec(fontSize: 20),
-//                          behaviorPosition: charts.BehaviorPosition.start,
-//                          titleOutsideJustification:
-//                              charts.OutsideJustification.middleDrawArea),
+                          showVerticalFollowLine: charts
+                              .LinePointHighlighterFollowLineType.nearest),
                     ]),
               ),
             ],

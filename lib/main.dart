@@ -1,10 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_admob/firebase_admob.dart';
-
 import 'package:finance_calculator/EntryProjectionTab.dart';
-import 'SimpleLineChart.dart';
+import 'package:flutter/material.dart';
 
-const String deviceId = 'compound-interest-calcul-20c3d';
+import 'SimpleLineChart.dart';
 
 void main() => runApp(MyApp());
 
@@ -91,5 +88,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-//compound-interest-calcul-20c3d
